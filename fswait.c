@@ -1,4 +1,6 @@
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 1300
 #include <Availability.h>
+#endif
 #include "fswait.h"
 
 static void (*callback_func)(int, char **) = NULL;

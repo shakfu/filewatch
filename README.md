@@ -2,9 +2,18 @@
 
 A lightweight macOS file watcher.
 
-This is a friendly simplified fork of Nicholas Simmons' [node-native-osx-filewatcher](https://github.com/nsimmons/node-native-osx-filewatcher) with the node-related code removed.
+This is a friendly simplified fork of Nicholas Simmons' [node-native-osx-filewatcher](https://github.com/nsimmons/node-native-osx-filewatcher) with the following changes:
 
-A Makefile was added as well as some conditional compilation logic to remove a deprecation warning.
+- removed node-related code
+- added Makefile was added 
+- added code and conditional compilation logic address deprecated api
+
+To build:
+
+```bash
+make
+```
+
 
 The following slightly edited text is from his README:
 
