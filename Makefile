@@ -4,13 +4,17 @@
 all: build
 
 build:
-	@gcc -g -o watcher main.c fswait.c -framework CoreServices
+	@mkdir -p build
+	@gcc -g -o build/watcher main.c fswait.c -framework CoreServices
+
+cmake:
+	@mkdir -p build && cd build && cmake .. && cmake --build .
 
 clean:
-	@rm -f watcher
+	@rm -rf build
 
 test: build
 	@echo "starting test..."
-	@./watcher
+	@./build/watcher
 
 	

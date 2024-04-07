@@ -6,17 +6,26 @@ This is a friendly fork of Nicholas Simmons' [node-native-osx-filewatcher](https
 
 - simplified codebase
 - removed node-related code
-- added Makefile was added 
+- added Makefile
+- added CMakeList.txt
 - added code and conditional compilation logic address deprecated api
 
-To build:
+
+## Building
+
+Easiest is just:
 
 ```bash
 make
 ```
 
+Cmake works as well via the usual build sequence or `make cmake`
 
-The following slightly edited text is from his README:
+
+
+## Original README
+
+The following slightly edited text is from the original README:
 
 Native file watcher implementation for Mac OS X. Uses Mac OS X FSEvents API to monitor a directory.
 
