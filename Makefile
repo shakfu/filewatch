@@ -4,7 +4,7 @@
 all: build
 
 build:
-	@gcc -o watcher main.c fswait.c -framework CoreServices
+	@gcc -g -o watcher main.c fswait.c -framework CoreServices
 
 clean:
 	@rm -f watcher
