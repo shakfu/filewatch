@@ -5,7 +5,7 @@ all: build
 
 build:
 	@mkdir -p build
-	@gcc -g -o build/watcher main.c fswait.c -framework CoreServices
+	@gcc -g -o build/watcher src/main.c src/fswait.c -framework CoreServices
 
 cmake:
 	@mkdir -p build && cd build && cmake .. && cmake --build .

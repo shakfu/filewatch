@@ -20,13 +20,18 @@ message("CMAKE_OSX_ARCHITECTURES set to ${CMAKE_OSX_ARCHITECTURES}")
 
 
 add_executable(watcher
-    fswait.c
-    main.c
+    src/fswait.c
+    src/main.c
 )
 
 target_compile_options(watcher
     PUBLIC
     -g
+)
+
+target_include_directories(watcher
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/src
 )
 
 target_link_libraries(watcher
